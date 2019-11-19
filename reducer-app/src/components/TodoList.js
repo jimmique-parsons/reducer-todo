@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react';
 
  import Todo from './Todo';
+ import TodoForm from './TodoForm';
  import { todoReducer, initialTodosState } from '../reducers/todoReducer';
 
  export default function TodoList() {
@@ -13,6 +14,7 @@ import React, { useReducer } from 'react';
            return <Todo todo={todo} key={todo.id} />
          })
        }
+       <TodoForm />
      </div>
    );
  }
