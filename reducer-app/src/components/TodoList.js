@@ -11,10 +11,10 @@ import React, { useReducer } from 'react';
      <div>
       {
          state.map( (todo) => {
-           return <Todo todo={todo} key={todo.id} />
+            return <Todo todo={todo} key={todo.id} dispatch={dispatch} />
          })
        }
-       <TodoForm />
+       <TodoForm dispatch={dispatch} />
      </div>
    );
  }
