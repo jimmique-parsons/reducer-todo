@@ -8,7 +8,7 @@ import React, { useReducer } from 'react';
     const [ state, dispatch ] = useReducer(todoReducer, initialTodosState);
 
    return (
-     <div>
+    <div className="todolist">
       {
          state.map( (todo) => {
             return <Todo todo={todo} key={todo.id} dispatch={dispatch} />

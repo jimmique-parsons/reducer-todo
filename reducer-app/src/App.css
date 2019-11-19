@@ -6,6 +6,59 @@
   color: #09d3ac;
 }
 
+.todolist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
 .todo.completed {
   text-decoration: line-through;
+}
+
+.todoform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todoform__input {
+  margin-top: 5px;
+  padding: 5px 10px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+.btn-container {
+  margin: 10px;
+}
+
+.btn-container__btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn-container__btn:hover {
+  cursor: pointer;
+}
+
+.btn-container__btn--add {
+  background-color: rgb(5, 194, 5);
+  margin-right: 5px;
+}
+
+.btn-container__btn--clear {
+  background-color: rgb(255, 51, 0);
 }

@@ -29,16 +29,23 @@ export default function TodoForm({dispatch}) {
 
     return (
         <>
-          <form>
+          <form className="todoform">
           <input 
+           className="todoform__input"
            type="text" 
            placeholder="New Todo" 
            name="newTodoText"
            value={newTodoText}
            onChange={handleChanges}
          />
-        <button onClick={addTodo}>Add Todo</button>
-        <button onClick={clearCompleted}>Clear Completed</button>
+        <div className="btn-container">
+           <button 
+             className="btn-container__btn btn-container__btn--add" 
+             onClick={addTodo}>Add Todo</button>
+           <button 
+             className="btn-container__btn btn-container__btn--clear"
+             onClick={clearCompleted}>Clear Completed</button>
+         </div>
        </form>
      </>
    )
